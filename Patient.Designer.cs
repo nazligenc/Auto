@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,19 +40,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
-            this.txtAddress = new MetroFramework.Controls.MetroTextBox();
-            this.txtPhone = new MetroFramework.Controls.MetroTextBox();
-            this.cmbBloodType = new System.Windows.Forms.ComboBox();
-            this.cmbGender = new System.Windows.Forms.ComboBox();
-            this.txtAge = new MetroFramework.Controls.MetroTextBox();
-            this.txtFullName = new MetroFramework.Controls.MetroTextBox();
+            this.HAdresTb = new MetroFramework.Controls.MetroTextBox();
+            this.HTelefonTb = new MetroFramework.Controls.MetroTextBox();
+            this.HKGrupCb = new System.Windows.Forms.ComboBox();
+            this.HCinsCb = new System.Windows.Forms.ComboBox();
+            this.HYasTb = new MetroFramework.Controls.MetroTextBox();
+            this.HAdSoyadTb = new MetroFramework.Controls.MetroTextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -73,6 +73,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(244, 605);
             this.panel1.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::KanBaS.Properties.Resources._7496607;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 175);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
             // 
             // btnExit
             // 
@@ -194,149 +204,162 @@
             this.btnSave.TabIndex = 30;
             this.btnSave.Text = "SAVE";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // txtAddress
-            // 
-            // 
-            // 
-            // 
-            this.txtAddress.CustomButton.Image = null;
-            this.txtAddress.CustomButton.Location = new System.Drawing.Point(110, 2);
-            this.txtAddress.CustomButton.Name = "";
-            this.txtAddress.CustomButton.Size = new System.Drawing.Size(135, 135);
-            this.txtAddress.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtAddress.CustomButton.TabIndex = 1;
-            this.txtAddress.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtAddress.CustomButton.UseSelectable = true;
-            this.txtAddress.CustomButton.Visible = false;
-            this.txtAddress.Lines = new string[0];
-            this.txtAddress.Location = new System.Drawing.Point(485, 422);
-            this.txtAddress.MaxLength = 32767;
-            this.txtAddress.Name = "txtAddress";
-            this.txtAddress.PasswordChar = '\0';
-            this.txtAddress.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtAddress.SelectedText = "";
-            this.txtAddress.SelectionLength = 0;
-            this.txtAddress.SelectionStart = 0;
-            this.txtAddress.ShortcutsEnabled = true;
-            this.txtAddress.Size = new System.Drawing.Size(248, 140);
-            this.txtAddress.Style = MetroFramework.MetroColorStyle.Red;
-            this.txtAddress.TabIndex = 29;
-            this.txtAddress.UseSelectable = true;
-            this.txtAddress.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtAddress.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // txtPhone
+            // HAdresTb
             // 
             // 
             // 
             // 
-            this.txtPhone.CustomButton.Image = null;
-            this.txtPhone.CustomButton.Location = new System.Drawing.Point(121, 2);
-            this.txtPhone.CustomButton.Name = "";
-            this.txtPhone.CustomButton.Size = new System.Drawing.Size(25, 25);
-            this.txtPhone.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtPhone.CustomButton.TabIndex = 1;
-            this.txtPhone.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtPhone.CustomButton.UseSelectable = true;
-            this.txtPhone.CustomButton.Visible = false;
-            this.txtPhone.Lines = new string[0];
-            this.txtPhone.Location = new System.Drawing.Point(521, 318);
-            this.txtPhone.MaxLength = 32767;
-            this.txtPhone.Name = "txtPhone";
-            this.txtPhone.PasswordChar = '\0';
-            this.txtPhone.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtPhone.SelectedText = "";
-            this.txtPhone.SelectionLength = 0;
-            this.txtPhone.SelectionStart = 0;
-            this.txtPhone.ShortcutsEnabled = true;
-            this.txtPhone.Size = new System.Drawing.Size(149, 30);
-            this.txtPhone.Style = MetroFramework.MetroColorStyle.Red;
-            this.txtPhone.TabIndex = 28;
-            this.txtPhone.UseSelectable = true;
-            this.txtPhone.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtPhone.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.HAdresTb.CustomButton.Image = null;
+            this.HAdresTb.CustomButton.Location = new System.Drawing.Point(110, 2);
+            this.HAdresTb.CustomButton.Name = "";
+            this.HAdresTb.CustomButton.Size = new System.Drawing.Size(135, 135);
+            this.HAdresTb.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.HAdresTb.CustomButton.TabIndex = 1;
+            this.HAdresTb.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.HAdresTb.CustomButton.UseSelectable = true;
+            this.HAdresTb.CustomButton.Visible = false;
+            this.HAdresTb.Lines = new string[0];
+            this.HAdresTb.Location = new System.Drawing.Point(485, 422);
+            this.HAdresTb.MaxLength = 32767;
+            this.HAdresTb.Name = "HAdresTb";
+            this.HAdresTb.PasswordChar = '\0';
+            this.HAdresTb.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.HAdresTb.SelectedText = "";
+            this.HAdresTb.SelectionLength = 0;
+            this.HAdresTb.SelectionStart = 0;
+            this.HAdresTb.ShortcutsEnabled = true;
+            this.HAdresTb.Size = new System.Drawing.Size(248, 140);
+            this.HAdresTb.Style = MetroFramework.MetroColorStyle.Red;
+            this.HAdresTb.TabIndex = 29;
+            this.HAdresTb.UseSelectable = true;
+            this.HAdresTb.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.HAdresTb.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // cmbBloodType
-            // 
-            this.cmbBloodType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbBloodType.FormattingEnabled = true;
-            this.cmbBloodType.Location = new System.Drawing.Point(521, 380);
-            this.cmbBloodType.Name = "cmbBloodType";
-            this.cmbBloodType.Size = new System.Drawing.Size(149, 24);
-            this.cmbBloodType.TabIndex = 27;
-            // 
-            // cmbGender
-            // 
-            this.cmbGender.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbGender.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.cmbGender.FormattingEnabled = true;
-            this.cmbGender.Location = new System.Drawing.Point(521, 249);
-            this.cmbGender.Name = "cmbGender";
-            this.cmbGender.Size = new System.Drawing.Size(149, 24);
-            this.cmbGender.TabIndex = 26;
-            // 
-            // txtAge
+            // HTelefonTb
             // 
             // 
             // 
             // 
-            this.txtAge.CustomButton.Image = null;
-            this.txtAge.CustomButton.Location = new System.Drawing.Point(121, 2);
-            this.txtAge.CustomButton.Name = "";
-            this.txtAge.CustomButton.Size = new System.Drawing.Size(25, 25);
-            this.txtAge.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtAge.CustomButton.TabIndex = 1;
-            this.txtAge.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtAge.CustomButton.UseSelectable = true;
-            this.txtAge.CustomButton.Visible = false;
-            this.txtAge.Lines = new string[0];
-            this.txtAge.Location = new System.Drawing.Point(521, 174);
-            this.txtAge.MaxLength = 32767;
-            this.txtAge.Name = "txtAge";
-            this.txtAge.PasswordChar = '\0';
-            this.txtAge.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtAge.SelectedText = "";
-            this.txtAge.SelectionLength = 0;
-            this.txtAge.SelectionStart = 0;
-            this.txtAge.ShortcutsEnabled = true;
-            this.txtAge.Size = new System.Drawing.Size(149, 30);
-            this.txtAge.Style = MetroFramework.MetroColorStyle.Red;
-            this.txtAge.TabIndex = 25;
-            this.txtAge.UseSelectable = true;
-            this.txtAge.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtAge.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.HTelefonTb.CustomButton.Image = null;
+            this.HTelefonTb.CustomButton.Location = new System.Drawing.Point(121, 2);
+            this.HTelefonTb.CustomButton.Name = "";
+            this.HTelefonTb.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.HTelefonTb.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.HTelefonTb.CustomButton.TabIndex = 1;
+            this.HTelefonTb.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.HTelefonTb.CustomButton.UseSelectable = true;
+            this.HTelefonTb.CustomButton.Visible = false;
+            this.HTelefonTb.Lines = new string[0];
+            this.HTelefonTb.Location = new System.Drawing.Point(521, 318);
+            this.HTelefonTb.MaxLength = 32767;
+            this.HTelefonTb.Name = "HTelefonTb";
+            this.HTelefonTb.PasswordChar = '\0';
+            this.HTelefonTb.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.HTelefonTb.SelectedText = "";
+            this.HTelefonTb.SelectionLength = 0;
+            this.HTelefonTb.SelectionStart = 0;
+            this.HTelefonTb.ShortcutsEnabled = true;
+            this.HTelefonTb.Size = new System.Drawing.Size(149, 30);
+            this.HTelefonTb.Style = MetroFramework.MetroColorStyle.Red;
+            this.HTelefonTb.TabIndex = 28;
+            this.HTelefonTb.UseSelectable = true;
+            this.HTelefonTb.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.HTelefonTb.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // txtFullName
+            // HKGrupCb
+            // 
+            this.HKGrupCb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HKGrupCb.FormattingEnabled = true;
+            this.HKGrupCb.Items.AddRange(new object[] {
+            "A+",
+            "0+",
+            "B+",
+            "AB+",
+            "A-",
+            "0-",
+            "B-",
+            "AB-"});
+            this.HKGrupCb.Location = new System.Drawing.Point(521, 380);
+            this.HKGrupCb.Name = "HKGrupCb";
+            this.HKGrupCb.Size = new System.Drawing.Size(149, 24);
+            this.HKGrupCb.TabIndex = 27;
+            // 
+            // HCinsCb
+            // 
+            this.HCinsCb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HCinsCb.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.HCinsCb.FormattingEnabled = true;
+            this.HCinsCb.Items.AddRange(new object[] {
+            "Female",
+            "Male"});
+            this.HCinsCb.Location = new System.Drawing.Point(521, 249);
+            this.HCinsCb.Name = "HCinsCb";
+            this.HCinsCb.Size = new System.Drawing.Size(149, 24);
+            this.HCinsCb.TabIndex = 26;
+            // 
+            // HYasTb
             // 
             // 
             // 
             // 
-            this.txtFullName.CustomButton.Image = null;
-            this.txtFullName.CustomButton.Location = new System.Drawing.Point(121, 2);
-            this.txtFullName.CustomButton.Name = "";
-            this.txtFullName.CustomButton.Size = new System.Drawing.Size(25, 25);
-            this.txtFullName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtFullName.CustomButton.TabIndex = 1;
-            this.txtFullName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtFullName.CustomButton.UseSelectable = true;
-            this.txtFullName.CustomButton.Visible = false;
-            this.txtFullName.Lines = new string[0];
-            this.txtFullName.Location = new System.Drawing.Point(521, 99);
-            this.txtFullName.MaxLength = 32767;
-            this.txtFullName.Name = "txtFullName";
-            this.txtFullName.PasswordChar = '\0';
-            this.txtFullName.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtFullName.SelectedText = "";
-            this.txtFullName.SelectionLength = 0;
-            this.txtFullName.SelectionStart = 0;
-            this.txtFullName.ShortcutsEnabled = true;
-            this.txtFullName.Size = new System.Drawing.Size(149, 30);
-            this.txtFullName.Style = MetroFramework.MetroColorStyle.Red;
-            this.txtFullName.TabIndex = 24;
-            this.txtFullName.UseSelectable = true;
-            this.txtFullName.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtFullName.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.HYasTb.CustomButton.Image = null;
+            this.HYasTb.CustomButton.Location = new System.Drawing.Point(121, 2);
+            this.HYasTb.CustomButton.Name = "";
+            this.HYasTb.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.HYasTb.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.HYasTb.CustomButton.TabIndex = 1;
+            this.HYasTb.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.HYasTb.CustomButton.UseSelectable = true;
+            this.HYasTb.CustomButton.Visible = false;
+            this.HYasTb.Lines = new string[0];
+            this.HYasTb.Location = new System.Drawing.Point(521, 174);
+            this.HYasTb.MaxLength = 32767;
+            this.HYasTb.Name = "HYasTb";
+            this.HYasTb.PasswordChar = '\0';
+            this.HYasTb.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.HYasTb.SelectedText = "";
+            this.HYasTb.SelectionLength = 0;
+            this.HYasTb.SelectionStart = 0;
+            this.HYasTb.ShortcutsEnabled = true;
+            this.HYasTb.Size = new System.Drawing.Size(149, 30);
+            this.HYasTb.Style = MetroFramework.MetroColorStyle.Red;
+            this.HYasTb.TabIndex = 25;
+            this.HYasTb.UseSelectable = true;
+            this.HYasTb.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.HYasTb.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // HAdSoyadTb
+            // 
+            // 
+            // 
+            // 
+            this.HAdSoyadTb.CustomButton.Image = null;
+            this.HAdSoyadTb.CustomButton.Location = new System.Drawing.Point(121, 2);
+            this.HAdSoyadTb.CustomButton.Name = "";
+            this.HAdSoyadTb.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.HAdSoyadTb.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.HAdSoyadTb.CustomButton.TabIndex = 1;
+            this.HAdSoyadTb.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.HAdSoyadTb.CustomButton.UseSelectable = true;
+            this.HAdSoyadTb.CustomButton.Visible = false;
+            this.HAdSoyadTb.Lines = new string[0];
+            this.HAdSoyadTb.Location = new System.Drawing.Point(521, 99);
+            this.HAdSoyadTb.MaxLength = 32767;
+            this.HAdSoyadTb.Name = "HAdSoyadTb";
+            this.HAdSoyadTb.PasswordChar = '\0';
+            this.HAdSoyadTb.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.HAdSoyadTb.SelectedText = "";
+            this.HAdSoyadTb.SelectionLength = 0;
+            this.HAdSoyadTb.SelectionStart = 0;
+            this.HAdSoyadTb.ShortcutsEnabled = true;
+            this.HAdSoyadTb.Size = new System.Drawing.Size(149, 30);
+            this.HAdSoyadTb.Style = MetroFramework.MetroColorStyle.Red;
+            this.HAdSoyadTb.TabIndex = 24;
+            this.HAdSoyadTb.UseSelectable = true;
+            this.HAdSoyadTb.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.HAdSoyadTb.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // label14
             // 
@@ -416,28 +439,18 @@
             this.label9.TabIndex = 18;
             this.label9.Text = "Phone Number";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::KanBaS.Properties.Resources._7496607;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 175);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(33, 31);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 18;
-            this.pictureBox1.TabStop = false;
-            // 
             // Patient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(962, 605);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.txtAddress);
-            this.Controls.Add(this.txtPhone);
-            this.Controls.Add(this.cmbBloodType);
-            this.Controls.Add(this.cmbGender);
-            this.Controls.Add(this.txtAge);
-            this.Controls.Add(this.txtFullName);
+            this.Controls.Add(this.HAdresTb);
+            this.Controls.Add(this.HTelefonTb);
+            this.Controls.Add(this.HKGrupCb);
+            this.Controls.Add(this.HCinsCb);
+            this.Controls.Add(this.HYasTb);
+            this.Controls.Add(this.HAdSoyadTb);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
@@ -471,12 +484,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnSave;
-        private MetroFramework.Controls.MetroTextBox txtAddress;
-        private MetroFramework.Controls.MetroTextBox txtPhone;
-        private System.Windows.Forms.ComboBox cmbBloodType;
-        private System.Windows.Forms.ComboBox cmbGender;
-        private MetroFramework.Controls.MetroTextBox txtAge;
-        private MetroFramework.Controls.MetroTextBox txtFullName;
+        private MetroFramework.Controls.MetroTextBox HAdresTb;
+        private MetroFramework.Controls.MetroTextBox HTelefonTb;
+        private System.Windows.Forms.ComboBox HKGrupCb;
+        private System.Windows.Forms.ComboBox HCinsCb;
+        private MetroFramework.Controls.MetroTextBox HYasTb;
+        private MetroFramework.Controls.MetroTextBox HAdSoyadTb;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;

@@ -39,11 +39,11 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.dtDonorList = new System.Windows.Forms.DataGridView();
+            this.DonorDGV = new System.Windows.Forms.DataGridView();
             this.txtFullName = new MetroFramework.Controls.MetroTextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtDonorList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DonorDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -179,21 +179,21 @@
             this.label8.ForeColor = System.Drawing.Color.IndianRed;
             this.label8.Location = new System.Drawing.Point(474, 20);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(184, 46);
+            this.label8.Size = new System.Drawing.Size(178, 44);
             this.label8.TabIndex = 3;
             this.label8.Text = "Donor List";
             // 
-            // dtDonorList
+            // DonorDGV
             // 
-            this.dtDonorList.BackgroundColor = System.Drawing.Color.IndianRed;
-            this.dtDonorList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtDonorList.Location = new System.Drawing.Point(259, 166);
-            this.dtDonorList.Name = "dtDonorList";
-            this.dtDonorList.RowHeadersWidth = 51;
-            this.dtDonorList.RowTemplate.Height = 24;
-            this.dtDonorList.Size = new System.Drawing.Size(682, 414);
-            this.dtDonorList.TabIndex = 4;
-            this.dtDonorList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtDonorList_CellContentClick);
+            this.DonorDGV.BackgroundColor = System.Drawing.Color.IndianRed;
+            this.DonorDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DonorDGV.Location = new System.Drawing.Point(259, 166);
+            this.DonorDGV.Name = "DonorDGV";
+            this.DonorDGV.RowHeadersWidth = 51;
+            this.DonorDGV.RowTemplate.Height = 24;
+            this.DonorDGV.Size = new System.Drawing.Size(682, 414);
+            this.DonorDGV.TabIndex = 4;
+            this.DonorDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtDonorList_CellContentClick);
             // 
             // txtFullName
             // 
@@ -234,7 +234,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(962, 605);
             this.Controls.Add(this.txtFullName);
-            this.Controls.Add(this.dtDonorList);
+            this.Controls.Add(this.DonorDGV);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -244,7 +244,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtDonorList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DonorDGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -263,7 +263,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DataGridView dtDonorList;
+        private System.Windows.Forms.DataGridView DonorDGV;
         private MetroFramework.Controls.MetroTextBox txtFullName;
     }
 }
